@@ -1,4 +1,5 @@
 import { FriendListEl } from "./FriendList/FriendList";
+import { GlobalSryles } from "./GlobalStyles";
 import { ProfileEl } from "./Profile/Profile";
 import { StatisticsEl } from "./Statistics/Statistics";
 import { TransactionHistoryTableEl } from "./TransactionHistory/TransactionHistory";
@@ -9,6 +10,7 @@ export const App = () => {
       <StatisticsEl/>
       <FriendListEl friends={friends}/>
       <TransactionHistoryTableEl/>
+      <GlobalSryles/>
   </div>  
 )
 };

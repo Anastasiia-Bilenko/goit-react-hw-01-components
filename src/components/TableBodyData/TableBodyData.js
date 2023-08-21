@@ -1,9 +1,11 @@
+import { TableElTd } from "components/TableBody/TableBody.styled"
+
 export const TableBodyDataEl = ({item:{type, amount, currency}})=>{
     return(
         <>
-        <td>{type}</td>
-        <td>{amount}</td>
-        <td>{currency}</td>
+        <TableElTd>{type}</TableElTd>
+        <TableElTd>{amount}</TableElTd>
+        <TableElTd>{currency}</TableElTd>
         </>
     )
 

@@ -1,8 +1,11 @@
-export const StatisticsListItemEl = ({ item: { label, percentage } }) => {
+import { Text } from "components/ListStarsItems/ListStarsItem.styled";
+import { ListItemDiv } from "./StatisticsListItem.styled";
+
+export const StatisticsListItemEl = ({ item: { label, percentage, id } }) => {
   return (
-    <>
-      <span>{label}</span>
+    <ListItemDiv id={id} >
+      <Text>{label}</Text>
       <span>{percentage}</span>
-    </>
+    </ListItemDiv>
   );
 };

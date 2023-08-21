@@ -1,11 +1,12 @@
 import { StatisticsListEL } from "components/StatisticsList/StatisticsList"
 import data from '../data.json'
+import { Title, Wrapper } from "./Statistics.styled"
 
 export const StatisticsEl = () => {
     return (
-        <section>
-  <h2>Upload stats</h2>
+        <Wrapper title="Upload stats" stats={data} >
+  <Title>Upload stats</Title>
 <StatisticsListEL data={data}/>
-  </section>
+  </Wrapper>
     )
 }

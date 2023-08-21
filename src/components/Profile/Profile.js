@@ -1,12 +1,17 @@
 import { DescriptionEl } from "components/Description/Description"
 import userinfo from "../user.json"
 import { ListStarsEl } from "components/ListStars/ListStars"
+import { Wrapper } from "./Profile.styled"
+import PropTypes from "prop-types";
 
 export const ProfileEl = () => {
     return (
-<div>
+<Wrapper>
 <DescriptionEl info ={userinfo}/>
 <ListStarsEl/>
-</div>    
+</Wrapper>    
     )
+}
+DescriptionEl.propTypes = {
+    userinfo : PropTypes.string
 }
